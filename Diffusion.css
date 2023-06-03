@@ -158,7 +158,7 @@ body{
 .dimensions-selected:hover{
     cursor: pointer;
 }
-.dimensions-selected:active{
+.dimensions-selected:active, .dimensions-selected:focus{
     cursor: pointer;
     background-color: #ffffff;
     color: #000000;
@@ -189,4 +189,9 @@ body{
 .Random:active{
     background-color: rgb(63, 63, 63);
     cursor: pointer;
+}
+.focus{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
 }
