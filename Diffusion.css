@@ -1,0 +1,186 @@
+body{
+    background-color: #000000;
+    font-family: Bol;
+    overflow-y: hidden
+}
+
+@font-face {
+    font-family: Bol;
+    src: url(../ASSETS/FONT/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Runes;
+    src: url(../ASSETS/FONT/SkavenzoexyRegular-Wy774.ttf);
+}
+@font-face {
+    font-family: Sans;
+    src: url(../ASSETS/FONT/ProductSans-Light.ttf);
+}
+.container_layout{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 300px calc(100% - 600px) 300px;
+}
+.Prompt{
+    border-inline-end: solid #3f3f3f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.prompt{
+    margin: 8px;
+    color: #fff;
+}
+.desc{
+    margin: 8px;
+    color: #fff;
+}
+.prompting{
+    margin: 8px;
+    color: #fff;
+    background-color: #3f3f3f;
+    border-radius: 4px;
+    height: 0px;
+    min-height: 100px;
+    width: 0px;
+    min-width: 250px;
+    resize: none;
+    overflow: auto;
+}
+.negative-prompting{
+    resize: none;
+    margin: 8px;
+    color: #fff;
+    background-color: #3f3f3f;
+    border-radius: 4px;
+    height: 0px;
+    min-height: 50px;
+    width: 0px;
+    min-width: 250px;
+    overflow: auto;
+}
+.prompting::placeholder{
+    font-family: Bol;
+}
+.prompting:active{
+
+    color: #fff;
+    background-color: #3f3f3f;
+    border-radius: 4px;
+    border-color: #a1a1a1;
+}
+.gen-con{
+    bottom: -20px;
+    position: absolute;
+    margin: 8px;
+    display: flex;
+    height: 50px;
+    width: 267px;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+.Generate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    color: #fff;
+    background-color: #4e4e4e;
+}
+.Generate:hover{
+    background-color: #9b9b9b;
+    cursor: pointer;
+}
+.Generate:active{
+    background-color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+.negative{
+    margin: 8px;
+    color: #fff;
+}
+.img2img{
+    margin: 8px;
+    color: #fff;
+}
+.Params{
+    border-inline-start: solid #3f3f3f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.key{
+    color: #fff;
+}
+.Display{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.Image{
+    width: 90%;
+    height: 90%;
+    margin-left: 38px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 4px;
+    border: solid white;
+}
+.model-select {
+    position: relative;
+    font-family: Bol;
+  }  
+.model-select select {
+    margin-top: 8px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #fff;
+}
+.dimensions {
+    margin-top: 8px;
+    width: 200px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #fff;
+}
+.dimensions:focus{
+    border-color: #fff;
+}
+.dimensions::placeholder{
+    color: #fff;
+}
+.Title{
+    margin: 8px;
+}
+.red{
+    border: solid #ff0000;
+}
+.white{
+    border-color: #fff;
+}
+.Random{
+    display: flex;
+    color: #fff;
+    background-color: #4e4e4e;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    height: 30px;
+    width: 80px;
+}
+.Random:hover{
+    background-color: #9b9b9b;
+    cursor: pointer;
+}
+.Random:active{
+    background-color: rgb(63, 63, 63);
+    cursor: pointer;
+}

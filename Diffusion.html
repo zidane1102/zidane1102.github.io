@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Diffusion.css">
+    <link rel="stylesheet" href="../ASSETS/FONT/all.css">
+</head>
+<body>
+    <div class="container_layout">
+        <div class="Prompt">
+            <div class="prompt">Prompt</div>
+            <div class="desc">What do you want to see ?</div>
+            <textarea id="prompting" type="text" class="prompting" placeholder="Tiny underwater complete world in large glass bowl, water, omnilight, Sharp, detailed and intricate environment"></textarea>
+            <div class="Title weight">Weight</div>
+            <input class="Title dimensions" type="text" name="" id="post-weight", placeholder="Enter your desired weight">
+            <div class="prompt">Negative Prompt</div>
+            <div class="desc">What do you not want to see ?</div>
+            <textarea id="negative-prompting" type="text" class="negative-prompting" placeholder="Deformed, ugly, duplicate, ..."></textarea>
+            <div class="Title weight">Weight</div>
+            <input class="Title dimensions" type="text" name="" id="neg-weight", placeholder="Enter your desired weight">
+            <div class="gen-con">
+                <div id="Generate" class="Generate">Generate</div>
+            </div>
+        </div>
+        <div id="display" class="Display">
+        </div>
+        <div class="Params">
+            <div class="Title">Parameters</div>
+            <div class="account Title">Your key: <div id="key" class="key "></div></div>
+            <div class="Title model">Model 
+                <div class="model-select">
+                    <select id = 'model-select'>
+                        <option value="0">Select Model:</option>
+                        <option value="stable-diffusion-v1">stable-diffusion-v1</option>
+                        <option value="stable-diffusion-v1-5">stable-diffusion-v1-5</option>
+                        <option value="stable-diffusion-512-v2-0">stable-diffusion-512-v2-0</option>
+                        <option value="stable-diffusion-768-v2-0">stable-diffusion-768-v2-0</option>
+                        <option value="stable-diffusion-depth-v2-0">stable-diffusion-depth-v2-0</option>
+                        <option value="stable-diffusion-512-v2-1">stable-diffusion-512-v2-1</option>
+                        <option value="stable-diffusion-768-v2-1">stable-diffusion-768-v2-1</option>
+                      </select>
+                </div>
+            </div>
+            <div class="Title">Height</div>
+            <input class="Title dimensions" type="text" name="" id="height", placeholder="Enter your desired height">
+            <div class="Title">Width</div>
+            <input class="Title dimensions" type="text" name="" id="width", placeholder="Enter your desired width">
+            <div class="Title">CFG-scale</div>
+            <input class="Title dimensions" type="text" name="" id="cfg_scale", value="7">
+            <div class="Title model">Sampler 
+                <div class="model-select">
+                    <select id = 'sampler'>
+                        <option value="DDPM">DDPM:</option>
+                        <option value="K_DPMPP_2S_ANCESTRAL">K_DPMPP_2S_ANCESTRAL</option>
+                        <option value="K_EULER">K_EULER</option>
+                        <option value="K_DPM_2_ANCESTRAL">K_DPM_2_ANCESTRAL</option>
+                        <option value="K_EULER_ANCESTRAL">K_EULER_ANCESTRAL</option>
+                      </select>
+                </div>
+            </div>
+            <div class="Title">Sample</div>
+            <input class="Title dimensions" type="text" name="" id="samples", value = 1>
+            <div class="Title">Seed</div>
+            <input class="Title dimensions" type="text" name="" id="seed", value = 42>
+            <div id="Random" class="Random Title">Random</div>
+            <div class="Title">Steps</div>
+            <input class="Title dimensions" type="text" name="" id="steps", value = 50>
+            <div class="Title model">Style Preset
+                <div class="model-select">
+                    <select id = 'style_preset'>
+                        <option value="enhance">enhance:</option>
+                        <option value="photographic">photographic</option>
+                        <option value="comic-book">comic-book</option>
+                        <option value="fantasy-art">fantasy-art</option>
+                        <option value="digital-art">digital-art</option>
+                        <option value="analog-film">analog-film</option>
+                        <option value="anime">anime</option>
+                        <option value="cinematic">cinematic</option>
+                        <option value="3d-model">3d-model</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/jquery-3.6.3.min.js"></script>
+    <script src="../JS/Diffusion.js"></script>
+</body>
+</html>
