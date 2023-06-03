@@ -1,4 +1,4 @@
-account = `sk-KSdKkKeklLfmXrDAkQkrKKY638vsy0u9YshvujssDaj13BIT`
+account = `sk-bO1o08nghUYsgn8OqwCJhqm2YOu0C4nUsBujnRFSjoqQBSvY`
 $(document).on('click', '#Random', function(){
     document.getElementById('seed').value = Math.floor(Math.random() * 1000000)
 })
